@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr" data-flavor="mangue">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>OMIUS Vodka — L'intensité du fruit dans une gorgée</title>
+<meta name="description" content="OMIUS Vodka. Pure Grain, Mangue, Pêche, Red Berry. Quatre univers, une seule signature. Distillée à partir de grains purs, sublimée par le fruit." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============ HIDDEN SVG FRUIT LIBRARY ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="fr-berry" viewBox="0 0 100 120">
+      <path d="M50 24 C74 24 92 44 92 70 C92 98 72 116 50 116 C28 116 8 98 8 70 C8 44 26 24 50 24Z" fill="currentColor"/>
+      <path d="M50 6 C46 16 40 22 30 24 C42 30 46 30 50 40 C54 30 58 30 70 24 C60 22 54 16 50 6Z" fill="#3ba55c"/>
+      <g fill="rgba(255,255,255,.85)"><circle cx="34" cy="58" r="3.2"/><circle cx="52" cy="52" r="3.2"/><circle cx="68" cy="60" r="3.2"/><circle cx="42" cy="78" r="3.2"/><circle cx="60" cy="80" r="3.2"/><circle cx="50" cy="96" r="3.2"/><circle cx="28" cy="82" r="3"/><circle cx="74" cy="82" r="3"/></g>
+      <ellipse cx="38" cy="50" rx="14" ry="9" fill="rgba(255,255,255,.35)"/>
+    </symbol>
+    <symbol id="fr-rasp" viewBox="0 0 100 110">
+      <g fill="currentColor">
+        <circle cx="34" cy="44" r="15"/><circle cx="56" cy="40" r="15"/><circle cx="46" cy="62" r="15"/><circle cx="66" cy="62" r="15"/><circle cx="30" cy="66" r="14"/><circle cx="48" cy="84" r="14"/><circle cx="64" cy="84" r="13"/>
+      </g>
+      <g fill="rgba(255,255,255,.4)"><circle cx="30" cy="40" r="5"/><circle cx="52" cy="36" r="5"/><circle cx="42" cy="58" r="5"/></g>
+    </symbol>
+    <symbol id="fr-peach" viewBox="0 0 110 110">
+      <path d="M55 14 C40 6 16 12 12 40 C8 66 26 100 55 100 C84 100 102 66 98 40 C94 12 70 6 55 14Z" fill="currentColor"/>
+      <path d="M55 14 C55 40 55 70 55 100" stroke="rgba(150,40,10,.28)" stroke-width="4" fill="none"/>
+      <path d="M55 12 C50 4 40 2 34 6 C44 6 50 10 55 16Z" fill="#4faa4f"/>
+      <ellipse cx="36" cy="40" rx="16" ry="11" fill="rgba(255,255,255,.4)"/>
+    </symbol>
+    <symbol id="fr-mango" viewBox="0 0 120 90">
+      <path d="M30 20 C58 4 100 8 112 34 C122 56 96 82 60 84 C24 86 2 62 8 42 C12 28 20 24 30 20Z" fill="currentColor"/>
+      <path d="M40 14 C36 8 30 8 26 12 C34 12 38 16 42 22Z" fill="#59a63a"/>
+      <ellipse cx="44" cy="38" rx="20" ry="12" fill="rgba(255,255,255,.4)"/>
+    </symbol>
+    <symbol id="fr-leaf" viewBox="0 0 80 100">
+      <path d="M40 4 C70 22 74 66 40 96 C6 66 10 22 40 4Z" fill="currentColor"/>
+      <path d="M40 10 L40 92" stroke="rgba(255,255,255,.4)" stroke-width="3" fill="none"/>
+    </symbol>
+    <symbol id="fr-drop" viewBox="0 0 70 100">
+      <path d="M35 4 C35 4 64 44 64 66 C64 84 51 96 35 96 C19 96 6 84 6 66 C6 44 35 4 35 4Z" fill="currentColor"/>
+      <ellipse cx="24" cy="60" rx="9" ry="14" fill="rgba(255,255,255,.55)"/>
+    </symbol>
+    <symbol id="fr-ice" viewBox="0 0 100 100">
+      <rect x="14" y="18" width="64" height="64" rx="16" fill="currentColor"/>
+      <rect x="14" y="18" width="64" height="64" rx="16" fill="url(#iceG)"/>
+      <path d="M24 30 L44 24" stroke="rgba(255,255,255,.7)" stroke-width="5" stroke-linecap="round"/>
+      <linearGradient id="iceG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="rgba(255,255,255,.55)"/><stop offset="1" stop-color="rgba(255,255,255,0)"/></linearGradient>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader">
+  <div class="pre-logo" aria-hidden="true"></div>
+  <div class="pre-bar"><span></span></div>
+</div>
+
+<!-- ============ FLAVOR WORLD BACKGROUND ============ -->
+<div class="world" aria-hidden="true">
+  <div class="world-grad"></div>
+  <div class="world-glow"></div>
+  <div class="world-grain"></div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#hero" class="nav-logo" aria-label="OMIUS accueil"><span class="logo-mark"></span></a>
+  <nav class="nav-links">
+    <a href="#saveurs">Nos saveurs</a>
+    <a href="#signature">Pure Grain</a>
+    <a href="#cocktails">À déguster</a>
+    <a href="#manifeste">Le manifeste</a>
+    <a href="#trouver">Où la trouver</a>
+  </nav>
+  <a href="#gamme" class="btn-ghost nav-cta">La gamme</a>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="fruits fruits-back" id="fruitsBack"></div>
+
+  <div class="hero-type">
+    <div class="hero-supra reveal">Quatre univers. Une seule signature.</div>
+    <h1 class="hero-title" id="heroTitle" aria-live="polite"></h1>
+    <p class="hero-sub reveal">Distillée à partir de grains purs, sublimée par le fruit.<br/>L'intensité du fruit dans une gorgée.</p>
+  </div>
+
+  <div class="hero-stage">
+    <div class="stage-word" id="stageWord" aria-hidden="true"></div>
+    <div class="stage-bottle" id="stageBottle">
+      <img src="assets/bottle-mangue.png" alt="Bouteille OMIUS" id="heroBottle" />
+      <img src="assets/fruit-mango.png" alt="" class="bite-cover" id="biteCover" />
+      <div class="bottle-shadow"></div>
+    </div>
+  </div>
+
+  <div class="fruits fruits-front" id="fruitsFront"></div>
+
+  <div class="hero-bottom">
+    <div class="hero-cta reveal">
+      <a href="#gamme" class="btn-solid">Découvrir la gamme</a>
+      <a href="#trouver" class="btn-ghost">Où la trouver</a>
+    </div>
+  </div>
+
+  <!-- FLAVOR SELECTOR -->
+  <div class="selector" id="selector" role="tablist" aria-label="Choisir une saveur">
+    <button class="sel" data-flavor="puregrain" role="tab"><span class="sel-dot"></span><span class="sel-name">Pure Grain</span></button>
+    <button class="sel" data-flavor="mangue" role="tab"><span class="sel-dot"></span><span class="sel-name">Mangue</span></button>
+    <button class="sel" data-flavor="peche" role="tab"><span class="sel-dot"></span><span class="sel-name">Pêche</span></button>
+    <button class="sel" data-flavor="redberry" role="tab"><span class="sel-dot"></span><span class="sel-name">Red Berry</span></button>
+  </div>
+
+  <div class="scrollcue reveal"><span>Explorer</span><i></i></div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Pure Grain • Full Flavor •&nbsp;</span><span>Pure Grain • Full Flavor •&nbsp;</span>
+    <span>Pure Grain • Full Flavor •&nbsp;</span><span>Pure Grain • Full Flavor •&nbsp;</span>
+  </div>
+</div>
+
+<!-- ============ SAVEURS / UNIVERS ============ -->
+<section class="univers" id="saveurs">
+  <div class="uni-head">
+    <p class="eyebrow">Nos saveurs</p>
+    <h2 class="h-glass">Choisissez votre humeur</h2>
+    <p class="lead">Le monde entier change selon la saveur. La lumière, les fruits, la couleur. Une vodka, quatre manières de la vivre.</p>
+  </div>
+
+  <div class="uni-body">
+    <div class="uni-info">
+      <div class="uni-badge" id="uniBadge"></div>
+      <h3 class="uni-name" id="uniName"></h3>
+      <div class="uni-meta">
+        <span class="pill" id="uniDeg"></span>
+        <span class="pill">70 cl</span>
+        <span class="pill">Pure Grain</span>
+      </div>
+      <p class="uni-desc" id="uniDesc"></p>
+      <ul class="uni-notes" id="uniNotes"></ul>
+      <a href="#gamme" class="btn-solid" id="uniBuy">Voir le produit</a>
+    </div>
+
+    <div class="uni-visual">
+      <div class="uni-bottle-wrap">
+        <div class="uni-halo"></div>
+        <img src="" alt="" id="uniBottle" class="uni-bottle" />
+        <img src="assets/fruit-mango.png" alt="" class="uni-bite" id="uniBite" />
+      </div>
+      <div class="uni-fruits" id="uniFruits"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIGNATURE / PURE GRAIN ============ -->
+<section class="signature" id="signature">
+  <div class="sig-inner">
+    <div class="sig-text">
+      <p class="eyebrow">La base de tout</p>
+      <h2 class="h-glass">Pure Grain Vodka</h2>
+      <p class="lead">Une distillation propre, sur grains sélectionnés. C'est la colonne vertébrale d'OMIUS : nette, ronde, précise. Le point de départ de chaque saveur.</p>
+      <div class="sig-stats">
+        <div><b>40°</b><small>Titrage</small></div>
+        <div><b>5×</b><small>Distillée</small></div>
+        <div><b>100%</b><small>Grains purs</small></div>
+        <div><b>70cl</b><small>Format</small></div>
+      </div>
+    </div>
+    <div class="sig-card">
+      <div class="sig-glow"></div>
+      <img src="assets/bottle-puregrain.png" alt="OMIUS Pure Grain" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ COCKTAILS ============ -->
+<section class="cocktails" id="cocktails">
+  <div class="uni-head">
+    <p class="eyebrow">À déguster</p>
+    <h2 class="h-glass">Quatre façons d'en profiter</h2>
+    <p class="lead">Sur glace, en spritz, en shaker ou tout simplement frappée. OMIUS se prête au jeu.</p>
+  </div>
+  <div class="cocktail-row" id="cocktailRow"></div>
+</section>
+
+<!-- ============ MANIFESTE ============ -->
+<section class="manifeste" id="manifeste">
+  <div class="mani-inner">
+    <p class="eyebrow light">Le manifeste</p>
+    <h2 class="mani-title">
+      On a distillé la <em>lumière</em>, pas la nuit.
+      Une vodka <em>solaire</em>, fruitée, vivante,
+      pensée pour les moments qui ont du <em>goût</em>.
+    </h2>
+    <div class="mani-signoff"><span class="logo-mark logo-mark-sm"></span></div>
+  </div>
+</section>
+
+<!-- ============ GAMME ============ -->
+<section class="gamme" id="gamme">
+  <div class="uni-head">
+    <p class="eyebrow">La gamme OMIUS</p>
+    <h2 class="h-glass">Toute la collection</h2>
+  </div>
+  <div class="gamme-grid" id="gammeGrid"></div>
+</section>
+
+<!-- ============ OÙ LA TROUVER ============ -->
+<section class="trouver" id="trouver">
+  <div class="trouver-inner">
+    <div class="trouver-text">
+      <p class="eyebrow">Où la trouver</p>
+      <h2 class="h-glass">Chez votre caviste</h2>
+      <p class="lead">OMIUS est distribuée par une sélection de cavistes indépendants. Demandez-la, ou commandez en ligne.</p>
+      <div class="trouver-actions">
+        <a href="https://espaceclient.lacaveatitoune.fr" target="_blank" rel="noopener" class="btn-solid">Commander en ligne</a>
+        <a href="https://www.instagram.com/omius.vodka" target="_blank" rel="noopener" class="btn-ghost">@omius.vodka</a>
+      </div>
+    </div>
+    <div class="trouver-cards">
+      <div class="stockist"><b>La Cave à Titoune</b><span>Caviste en ligne · Livraison France</span></div>
+      <div class="stockist"><b>Cavistes partenaires</b><span>Sélection indépendante</span></div>
+      <div class="stockist"><b>Bars &amp; clubs</b><span>Sur demande</span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="foot-top">
+    <span class="logo-mark logo-mark-lg"></span>
+    <p class="foot-tag">Distillée de la lumière.</p>
+  </div>
+  <div class="foot-links">
+    <a href="#saveurs">Nos saveurs</a>
+    <a href="#signature">Pure Grain</a>
+    <a href="#cocktails">À déguster</a>
+    <a href="#gamme">La gamme</a>
+    <a href="#trouver">Où la trouver</a>
+  </div>
+  <div class="foot-legal">
+    <span>© <span id="yr"></span> OMIUS Vodka</span>
+    <span class="abus">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
