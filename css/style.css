@@ -403,6 +403,7 @@ section{position:relative;z-index:1;padding:clamp(4rem,9vw,8rem) clamp(1.2rem,5v
   .dock-dot[data-flavor="peche"]{background:#ff8a5c}
   .dock-dot[data-flavor="redberry"]{background:#e01f45}
   .dock-dot.active{transform:scale(1.28);box-shadow:0 0 0 3px rgba(255,255,255,.6),0 3px 8px rgba(0,0,0,.3)}
+  .sig-card{display:none}
   .sig-stats{grid-template-columns:repeat(2,1fr)}
   .cocktail-row{grid-template-columns:1fr 1fr;gap:.7rem}
   .gamme-grid{grid-template-columns:1fr;gap:1rem}
