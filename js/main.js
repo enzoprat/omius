@@ -126,8 +126,9 @@ function setFlavor(key, instant=false){
   current = key;
   document.documentElement.setAttribute('data-flavor', key);
 
-  // selector + gamme active states
+  // selector + dock + gamme active states
   $$('.sel').forEach(b=>b.classList.toggle('active', b.dataset.flavor===key));
+  $$('.dock-dot').forEach(b=>b.classList.toggle('active', b.dataset.flavor===key));
   $$('.card').forEach(c=>c.classList.toggle('is-active', c.dataset.flavor===key));
 
   // hero title
@@ -323,8 +324,8 @@ function init(){
   buildGamme();
   setFlavor(current, true);
 
-  // selector clicks
-  $$('.sel').forEach(b=> b.addEventListener('click',()=>setFlavor(b.dataset.flavor)));
+  // selector + mobile dock clicks
+  $$('.sel, .dock-dot').forEach(b=> b.addEventListener('click',()=>setFlavor(b.dataset.flavor)));
   // keyboard arrows to cycle
   window.addEventListener('keydown',e=>{
     if(e.key==='ArrowRight'||e.key==='ArrowLeft'){
